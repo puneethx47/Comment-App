@@ -1,45 +1,42 @@
-# Comment-App
-Firstly i am sorry i couldnt upload my Assesment.zip its too large
+# Comment App
 
-so you can access through the link below:
+**A Spring MVC assessment application with a login flow and comment filtering.**
 
-https://drive.google.com/file/d/1sFoOrwBO-H6t5teNXF9YSSX4u8J95Wnn/view?usp=sharing
+This repository preserves the project download link and local setup instructions. The application source is distributed separately in the original assessment archive; it is not checked into this repository.
 
+## Application flow
 
+The original instructions describe a login page followed by a comments view, where comments can be filtered for logged-in and logged-out users.
 
-Hello!
-To run the project   
+## Get the source archive
 
-Set up-->
+[Open the original assessment archive on Google Drive](https://drive.google.com/file/d/1sFoOrwBO-H6t5teNXF9YSSX4u8J95Wnn/view?usp=sharing).
 
-1. Installed Eclipse latest version.
-2. Configure the Eclipse with Tomcat version 8.5
+Archive availability and access depend on the external Drive link. After extracting it, check `resources/run_instruction.txt` for the project-specific instructions supplied with the assessment.
 
--------------------------------------------------------------------------
-You can get the run_instruction.txt file inside zip file under resources
--------------------------------------------------------------------------
-To Run project
+## Local setup
 
-1.Extract the given Zip file into a desired folder
-2.Open Eclipse go to file--> open projects in file system --> browse the unzipped project folder in your computer --> click finish
-3.Right click on the displayed project 
-4.Select Run 
-5.Select run on server
-6.Select Tomcat v.85 under the local host click next
-7.Select the configured project on right hand side
-8.Select Finish.
+The original setup uses **Eclipse** with **Apache Tomcat 8.5**. Check the required Java version and complete dependency list in the downloaded project.
 
+1. Download and extract the assessment archive.
+2. In Eclipse, choose **File → Open Projects from File System**, select the extracted project directory, and finish the import.
+3. Configure a Tomcat 8.5 server in Eclipse.
+4. Right-click the imported app and select **Run As → Run on Server**.
+5. Select the configured Tomcat server, add the app, and finish.
+6. Open the entry point:
 
-After clicking finish a page will open with url = http://localhost:8080/SpringMVC22/ 
+```text
+http://localhost:8080/SpringMVC22/yahoo
+```
 
+The expected page is the login form. Submit it to continue to the comments view.
 
-Add prefix "yahoo" the url should display like this = http://localhost:8080/SpringMVC22/yahoo
+## Repository contents
 
-login Page is shown
+| Item | Availability |
+| :--- | :--- |
+| Setup and launch instructions | This README |
+| App source and bundled run instructions | External assessment archive |
+| Build configuration and automated tests | Not included in this repository |
 
-1.Fill the form 
-
-2.click submit
-
-3. Open's a page includes comment 
-4. You can filter the comments of loggedin and loggedout user
+**Author:** [Puneeth R](https://github.com/puneethx47)
